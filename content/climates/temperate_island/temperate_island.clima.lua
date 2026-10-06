@@ -247,12 +247,12 @@ return {
 			name = _("Temperate Island"),
 		},
 		category = "temperate.clima",
-		economy = "/economy/temperate.eco",
-		environment = "/climates/temperate/temperate.env",
-		defaultNames = "/names/europe/europe.names",
+		economy = "::/economy/temperate.eco",
+		environment = "::/climates/temperate/temperate.env",
+		defaultNames = "::/names/europe/europe.names",
 		groundTextures = { 
-			waterGround = "/climates/shared/gtex/water_ground.gtex",
-			waterShore = "/climates/shared/gtex/water_shore.gtex",
+			waterGround = "::/climates/shared/gtex/water_ground.gtex",
+			waterShore = "::/climates/shared/gtex/water_shore.gtex",
 		},
 		id = "temperate_island",
 		mapColoring = { 
@@ -280,20 +280,20 @@ return {
 		previewSeed = "",
 		skirt = { 
 			colorTex = { 
-				fileName = "/climates/shared/skirt_color.dds",
+				fileName = "::/climates/shared/skirt_color.dds",
 				scaleDownAllowed = false,
 				type = "TWOD",
 				wrapS = "REPEAT",
 			},
 			detailTex = { 
-				fileName = "/climates/shared/skirt_detail.dds",
+				fileName = "::/climates/shared/skirt_detail.dds",
 				scaleDownAllowed = false,
 				type = "TWOD",
 				wrapS = "REPEAT",
 				wrapT = "REPEAT",
 			},
 			waterTex = { 
-				fileName = "/climates/shared/water_skirt.dds",
+				fileName = "::/climates/shared/water_skirt.dds",
 				scaleDownAllowed = false,
 				type = "TWOD",
 			},
