@@ -1,0 +1,20 @@
+{
+    "dependencies": null,
+    "incompatibilities": null,
+    "modId": "temperate_island_generator",
+    "params": null,
+    "postRunScript": {
+        "fileName": "temperate_island_generator::/mod.script@postRunFn"
+    },
+    "preRunScript": {
+        "fileName": ""
+    },
+    "revision": 1,
+    "runScript": {
+        "fileName": ""
+    },
+    "severityAdd": "None",
+    "severityRemove": "None",
+    "visible": true,
+    "cosmetic": false
+}
