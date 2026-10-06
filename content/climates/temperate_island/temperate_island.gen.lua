@@ -15,7 +15,7 @@ return {
 		order = 1,
 		params = {
 			{
-				defaultIndex = 0,
+				defaultIndex = 1,
 				images = { },
 				key = "tiIslands",
 				name = _("Islands"),
@@ -28,7 +28,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 0,
+				defaultIndex = 1,
 				images = { },
 				key = "tiAreas",
 				name = _("Dense mountain areas"),
@@ -41,7 +41,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 2,
+				defaultIndex = 3,
 				images = { },
 				key = "tiSpacing",
 				name = _("Mountain spacing"),
@@ -54,7 +54,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 1,
+				defaultIndex = 2,
 				images = { },
 				key = "tiSmallRanges",
 				name = _("Small ranges"),
@@ -67,7 +67,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 2,
+				defaultIndex = 3,
 				images = { },
 				key = "tiRivers",
 				name = _("Rivers"),
@@ -80,7 +80,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 0,
+				defaultIndex = 1,
 				images = { },
 				key = "tiThickness",
 				name = _("River thickness"),
@@ -93,7 +93,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 1,
+				defaultIndex = 2,
 				images = { },
 				key = "tiLakes",
 				name = _("Lakes"),
@@ -106,7 +106,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 1,
+				defaultIndex = 2,
 				images = { },
 				key = "tiLakeSize",
 				name = _("Lake size"),
@@ -119,7 +119,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 0,
+				defaultIndex = 1,
 				images = { },
 				key = "tiBiomes",
 				name = _("Biomes"),
@@ -132,7 +132,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 1,
+				defaultIndex = 2,
 				images = { },
 				key = "tiStreets",
 				name = _("Starter roads"),
@@ -145,7 +145,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 1,
+				defaultIndex = 2,
 				images = { },
 				key = "tiTowns",
 				name = _("Cities"),
@@ -158,7 +158,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 1,
+				defaultIndex = 2,
 				images = { },
 				key = "tiIndustries",
 				name = _("Industries"),
@@ -171,7 +171,7 @@ return {
 				yearTo = 0,
 			},
 			{
-				defaultIndex = 0,
+				defaultIndex = 1,
 				images = { },
 				key = "tiIndustrySet",
 				name = _("Industry set"),

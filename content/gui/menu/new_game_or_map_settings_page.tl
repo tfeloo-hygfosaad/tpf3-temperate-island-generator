@@ -405,7 +405,7 @@ local function makeMapPreviewCompInputs(
 	locations.industry.absoluteMinimum = 24
 	locations.industry.industryProductivity = 1
 	locations.makeInitialStreets = true
-	if mapGenParam["tiStreets"] == 0 then
+	if mapGenParam["tiStreets"] == 1 then
 		locations.makeInitialStreets = false
 	end
 	locations.town.townFrequency = difficulty_util.getScale(
@@ -421,7 +421,7 @@ local function makeMapPreviewCompInputs(
 				"locations.industry.initialIndustryDensity",
 				modParams[""]["locations.industry.initialIndustryDensity"]
 			)
-	local allChains = mapGenParam["tiIndustrySet"] == 1 and mapGenParam["tiIndustries"] ~= 0
+	local allChains = mapGenParam["tiIndustrySet"] == 2 and mapGenParam["tiIndustries"] ~= 1
 	if allChains then
 		locations.industry.absoluteMinimum = 48
 		locations.industry.industryDensity = locations.industry.industryDensity * 1.4
@@ -637,7 +637,7 @@ local NewGameOrMapSettingsPage = react.RegisterRecipe("NewGameOrMapSettingsPage"
 					app.setWaitForStartReadyGame()
 				end
 				local configDict = configDictState:old()
-				if mapGenParamsState:old()["tiIndustrySet"] == 1 and mapGenParamsState:old()["tiIndustries"] ~= 0 then
+				if mapGenParamsState:old()["tiIndustrySet"] == 2 and mapGenParamsState:old()["tiIndustries"] ~= 1 then
 					for __, pair in ipairs(configDict) do
 						if pair[1] == "economy" then
 							pair[2] = "::/economy/all.eco"
@@ -807,8 +807,8 @@ local NewGameOrMapSettingsPage = react.RegisterRecipe("NewGameOrMapSettingsPage"
 		)
 		mode = api.type.HeighmapGenerationMode.new()
 		mode.terrainGenerator = mapParamsState:old().terrainGenerator
-		mode.generateTowns = mapGenParamsState:old()["tiTowns"] ~= 0
-		mode.generateIndustries = mapGenParamsState:old()["tiIndustries"] ~= 0
+		mode.generateTowns = mapGenParamsState:old()["tiTowns"] ~= 1
+		mode.generateIndustries = mapGenParamsState:old()["tiIndustries"] ~= 1
 		mode.generateAssets = true
 	end
 
