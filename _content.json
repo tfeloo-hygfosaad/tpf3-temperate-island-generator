@@ -3,9 +3,6 @@
     "files": [
         "climates/temperate_island/temperate_island.gen.lua",
         "climates/temperate_island/temperate_island_gen.tree.lua",
-        "climates/temperate_island/temperate_island.clima.lua",
-        "climates/temperate_island/temperate_island_clima.tree.lua",
-        "climates/temperate_island/ti_gradient_we.png",
-        "climates/temperate_island/ti_gradient_ns.png"
+        "climates/temperate_island/ti_island.png"
     ]
 }

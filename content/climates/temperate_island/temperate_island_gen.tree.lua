@@ -1576,7 +1576,7 @@ Otherwise no asset is placed.]],
 					},
 					forest = { 
 						key = "out",
-						nodeName = "TI forest",
+						nodeName = "add temperate river trees",
 					},
 				},
 				layerType = "assets_output",
@@ -1594,10 +1594,6 @@ Otherwise no asset is placed.]],
 						{ 4, "broadleaf", },
 						{ 6, "temperate_plains", },
 						{ 8, "temperate_river", },
-						{ 20, "sonoran_cactus", },
-						{ 21, "desert_shrub", },
-						{ 22, "tropical_beach_vegetation", },
-						{ 23, "norway_spruce", },
 					},
 				},
 				position = { 0.00181346, -0.128412, },
@@ -1766,11 +1762,11 @@ Otherwise no asset is placed.]],
 					},
 					riverWeight = { 
 						key = "out",
-						nodeName = "TI river weight",
+						nodeName = "New Add maps  #0",
 					},
 					riverWidth = { 
 						key = "out",
-						nodeName = "TI river width",
+						nodeName = "River width value mapping",
 					},
 					seed = { 
 						key = "seed",
@@ -1780,7 +1776,7 @@ Otherwise no asset is placed.]],
 				layerType = "gui/node_editor/river_points.node",
 				name = "river_map_0_river_data",
 				params = { 
-					baseCurvature = 0.02,
+					baseCurvature = 0.03,
 					baseProbability = 1,
 					lakeAmount = 0,
 					lakeSize = 0.2,
@@ -1948,7 +1944,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					in1 = { 
 						key = "out",
-						nodeName = "TI lakes combined",
+						nodeName = "Sea Rasterization",
 					},
 				},
 				layerType = "distance_map",
@@ -2045,7 +2041,7 @@ Otherwise no asset is placed.]],
 				layerType = "constant_map",
 				name = "biome_02 height offset",
 				params = { 
-					value = 5,
+					value = 14,
 				},
 				position = { -0.306406, -0.219141, },
 			},
@@ -2174,7 +2170,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					output = { 
 						key = "out",
-						nodeName = "TI biome 2",
+						nodeName = "New Multiply map  #0",
 					},
 				},
 				layerType = "output_map_data",
@@ -2192,7 +2188,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					output = { 
 						key = "out",
-						nodeName = "TI biome 4",
+						nodeName = "New Compare map #282",
 					},
 				},
 				layerType = "output_map_data",
@@ -2210,7 +2206,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					output = { 
 						key = "out",
-						nodeName = "TI biome 3",
+						nodeName = "New Multiply map   #1",
 					},
 				},
 				layerType = "output_map_data",
@@ -2228,7 +2224,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					output = { 
 						key = "out",
-						nodeName = "TI biome 1",
+						nodeName = "New Multiply map   #0",
 					},
 				},
 				layerType = "output_map_data",
@@ -2246,7 +2242,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					output = { 
 						key = "out",
-						nodeName = "TI biome 0",
+						nodeName = "biome_0_mask",
 					},
 				},
 				layerType = "output_map_data",
@@ -3213,7 +3209,7 @@ Otherwise no asset is placed.]],
 					from_x = -1.8,
 					from_y = 1.9,
 					to_x = 0,
-					to_y = 115,
+					to_y = 0,
 				},
 				position = { -0.305781, -0.222031, },
 			},
@@ -3840,11 +3836,11 @@ Otherwise no asset is placed.]],
 					},
 					numQuads = { 
 						key = "out",
-						nodeName = "TI uniform quad count",
+						nodeName = "Quantity of sea  samples #0",
 					},
 					sizeAndScale = { 
 						key = "out",
-						nodeName = "TI uniform lake scales",
+						nodeName = "Atlas scales #0",
 					},
 				},
 				layerType = "gui/node_editor/random_quads.node",
@@ -4044,7 +4040,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					in1 = { 
 						key = "out",
-						nodeName = "TI lakes combined",
+						nodeName = "Sea Rasterization",
 					},
 				},
 				layerType = "map_clamp_map",
@@ -4225,7 +4221,7 @@ Otherwise no asset is placed.]],
 				name = "River amount",
 				params = { 
 					dummy = 0.5,
-					key = "tiRivers",
+					key = "water",
 				},
 				position = { -0.386178, -0.181106, },
 			},
@@ -4242,8 +4238,8 @@ Otherwise no asset is placed.]],
 				params = { 
 					a_x = 0,
 					a_y = 1,
-					b_x = 0.002,
-					b_y = 0.8,
+					b_x = 0.001,
+					b_y = 1,
 					clamp = true,
 					x = 0,
 				},
@@ -4415,8 +4411,8 @@ Otherwise no asset is placed.]],
 					clamp = false,
 					from_x = 0.0826,
 					from_y = 0.992,
-					to_x = 0,
-					to_y = 4,
+					to_x = 14,
+					to_y = 14,
 				},
 				position = { -0.306016, -0.228203, },
 			},
@@ -5395,7 +5391,7 @@ Otherwise no asset is placed.]],
 				inputs = { 
 					x = { 
 						key = "out",
-						nodeName = "TI lake amount",
+						nodeName = "Ocean Amount",
 					},
 				},
 				layerType = "gui/node_editor/remap_number.node",
@@ -5403,8 +5399,8 @@ Otherwise no asset is placed.]],
 				params = { 
 					a_x = 0,
 					a_y = 1,
-					b_x = 0.08,
-					b_y = 0.42,
+					b_x = 0.25,
+					b_y = 1,
 					clamp = true,
 					x = 0,
 				},
@@ -5859,3566 +5855,445 @@ Otherwise no asset is placed.]],
 				},
 				position = { -0.400156, -0.120182, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI islands",
-				params = { 
-					dummy = 0,
-					key = "tiIslands",
-				},
-				position = { 0.86, 0.624, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI areas",
-				params = { 
-					dummy = 0,
-					key = "tiAreas",
-				},
-				position = { 0.86, 0.628, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI spacing",
-				params = { 
-					dummy = 0.5,
-					key = "tiSpacing",
-				},
-				position = { 0.86, 0.632, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI small amount",
-				params = { 
-					dummy = 0.25,
-					key = "tiSmallRanges",
-				},
-				position = { 0.86, 0.636, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI thickness",
-				params = { 
-					dummy = 0,
-					key = "tiThickness",
-				},
-				position = { 0.86, 0.64, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI lake amount",
-				params = { 
-					dummy = 0.25,
-					key = "tiLakes",
-				},
-				position = { 0.86, 0.644, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI lake size",
-				params = { 
-					dummy = 0.333333,
-					key = "tiLakeSize",
-				},
-				position = { 0.86, 0.648, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "param_number",
-				name = "TI biomes",
-				params = { 
-					dummy = 0,
-					key = "tiBiomes",
-				},
-				position = { 0.86, 0.652, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
+
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
 				inputs = { },
 				layerType = "constant_number",
-				name = "TI zero",
-				params = { 
+				name = "TI shape black",
+				params = {
 					value = 0,
 				},
-				position = { 0.86, 0.656, },
+				position = { 0.70, 0.30, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
 				inputs = { },
 				layerType = "constant_number",
-				name = "TI one",
-				params = { 
+				name = "TI shape white",
+				params = {
 					value = 1,
 				},
-				position = { 0.86, 0.66, },
+				position = { 0.70, 0.312, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					maxHeight = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					maxHeight = {
 						key = "out",
-						nodeName = "TI one",
+						nodeName = "TI shape white",
 					},
-					minHeight = { 
+					minHeight = {
 						key = "out",
-						nodeName = "TI zero",
+						nodeName = "TI shape black",
 					},
 				},
 				layerType = "texture_map",
-				name = "TI gradient we",
-				params = { 
-					tex = "temperate_island_generator::/climates/temperate_island/ti_gradient_we.png",
+				name = "TI island shape",
+				params = {
+					tex = "temperate_island_generator::/climates/temperate_island/ti_island.png",
 				},
-				position = { 0.86, 0.664, },
+				position = { 0.72, 0.30, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					maxHeight = { 
-						key = "out",
-						nodeName = "TI one",
-					},
-					minHeight = { 
-						key = "out",
-						nodeName = "TI zero",
-					},
-				},
-				layerType = "texture_map",
-				name = "TI gradient ns",
-				params = { 
-					tex = "temperate_island_generator::/climates/temperate_island/ti_gradient_ns.png",
-				},
-				position = { 0.86, 0.668, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "x",
-						nodeName = "Extract map sides #0",
-					},
-				},
-				layerType = "pow_number",
-				name = "TI inv width",
-				params = { 
-					in1 = 0,
-					in2 = -1,
-				},
-				position = { 0.86, 0.672, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI inv width",
-					},
-				},
-				layerType = "mul_number",
-				name = "TI half raw",
-				params = { 
-					in2 = 0.125,
-				},
-				position = { 0.86, 0.676, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI half raw",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI half",
-				params = { 
-					a_x = 0.005,
-					a_y = 0.02,
-					b_x = 0.005,
-					b_y = 0.02,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.68, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "output",
-						nodeName = "TI half",
-					},
-				},
-				layerType = "pow_number",
-				name = "TI inv half",
-				params = { 
-					in1 = 0,
-					in2 = -1,
-				},
-				position = { 0.86, 0.684, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					seed = {
 						key = "seed",
 						nodeName = "Data",
 					},
 				},
-				layerType = "gui/node_editor/random_number.node",
-				name = "TI axis random",
-				params = { 
-					max = 1,
-					min = 0,
-					seed = 0,
+				layerType = "gradient_noise_map",
+				name = "TI coast noise",
+				params = {
+					frequency = 0.00032,
+					gain = 0.48,
+					lacunarity = 2.05,
+					numOctaves = 3,
+					warp = 1.4,
 				},
-				position = { 0.86, 0.688, },
+				position = { 0.72, 0.312, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "number",
-						nodeName = "TI axis random",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI axis",
-				params = { 
-					a_x = 0.45,
-					a_y = 0.55,
-					b_x = 0,
-					b_y = 1,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.692, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "output",
-						nodeName = "TI axis",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI axis flip",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 0,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.696, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI axis flip",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI we part point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.7, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI gradient we",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI we part point",
+						nodeName = "TI coast noise",
 					},
 				},
 				layerType = "map_clamp_map",
-				name = "TI we part",
-				params = { 
-					clamp = false,
+				name = "TI coast wobble",
+				params = {
+					clamp = true,
 					from_x = 0,
-					from_y = 1,
+					from_y = 2,
+					to_x = -0.85,
+					to_y = 0.85,
+				},
+				position = { 0.72, 0.324, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI island shape",
+					},
+				},
+				layerType = "map_clamp_map",
+				name = "TI coast inner",
+				params = {
+					clamp = true,
+					from_x = 0,
+					from_y = 0.87,
 					to_x = 0,
 					to_y = 1,
 				},
-				position = { 0.86, 0.704, },
+				position = { 0.72, 0.328, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI axis",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI ns part point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.708, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI gradient ns",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI ns part point",
+						nodeName = "TI island shape",
 					},
 				},
 				layerType = "map_clamp_map",
-				name = "TI ns part",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.712, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI we part",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI ns part",
-					},
-				},
-				layerType = "add_map",
-				name = "TI channel coord",
-				params = { },
-				position = { 0.86, 0.716, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI islands",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI is2",
-				params = { 
-					a_x = 0.2,
-					a_y = 0.3,
-					b_x = 0,
-					b_y = 1,
+				name = "TI coast outer",
+				params = {
 					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.72, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI islands",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI is3",
-				params = { 
-					a_x = 0.7,
-					a_y = 0.8,
-					b_x = 0,
-					b_y = 1,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.724, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "output",
-						nodeName = "TI is2",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI not is2",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 0,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.728, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "output",
-						nodeName = "TI is3",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI not is3",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 0,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.732, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "output",
-						nodeName = "TI is2",
-					},
-					in2 = { 
-						key = "output",
-						nodeName = "TI not is3",
-					},
-				},
-				layerType = "mul_number",
-				name = "TI is2 only",
-				params = { 
-					in2 = 0,
-				},
-				position = { 0.86, 0.736, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI abs 2 shift",
-				params = { 
-					value = -0.5,
-				},
-				position = { 0.86, 0.74, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI channel coord",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 2 shift",
-					},
-				},
-				layerType = "add_map",
-				name = "TI abs 2 delta",
-				params = { },
-				position = { 0.86, 0.744, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 2 delta",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI abs 2 neg",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.748, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 2 delta",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 2 neg",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI abs 2",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.752, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI inv half",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI shore 2 norm point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.756, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 2",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI shore 2 norm point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore 2 norm",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.76, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI shore 2 norm",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore 2",
-				params = { 
-					clamp = true,
-					from_x = 1,
-					from_y = 1.65,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.764, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI abs 3a shift",
-				params = { 
-					value = -0.333333,
-				},
-				position = { 0.86, 0.768, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI channel coord",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 3a shift",
-					},
-				},
-				layerType = "add_map",
-				name = "TI abs 3a delta",
-				params = { },
-				position = { 0.86, 0.772, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3a delta",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI abs 3a neg",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.776, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3a delta",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 3a neg",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI abs 3a",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.78, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI abs 3b shift",
-				params = { 
-					value = -0.666667,
-				},
-				position = { 0.86, 0.784, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI channel coord",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 3b shift",
-					},
-				},
-				layerType = "add_map",
-				name = "TI abs 3b delta",
-				params = { },
-				position = { 0.86, 0.788, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3b delta",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI abs 3b neg",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.792, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3b delta",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 3b neg",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI abs 3b",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.796, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3a",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI abs 3 na",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.8, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3b",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI abs 3 nb",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.804, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3 na",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI abs 3 nb",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI abs 3 mx",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.808, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3 mx",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI abs 3",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.812, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI inv half",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI shore 3 norm point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.816, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI abs 3",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI shore 3 norm point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore 3 norm",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.82, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI shore 3 norm",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore 3",
-				params = { 
-					clamp = true,
-					from_x = 1,
-					from_y = 1.65,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.824, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI map one",
-				params = { 
-					value = 1,
-				},
-				position = { 0.86, 0.828, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI not is2",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI shore term a point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.832, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI map one",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI shore term a point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore term a",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.836, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI is2 only",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI shore term b point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.84, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI shore 2",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI shore term b point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore term b",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.844, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI is3",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI shore term c point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.848, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI shore 3",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI shore term c point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI shore term c",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.852, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI shore term a",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore term b",
-					},
-				},
-				layerType = "add_map",
-				name = "TI channel shore 1",
-				params = { },
-				position = { 0.86, 0.856, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI channel shore 1",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore term c",
-					},
-				},
-				layerType = "add_map",
-				name = "TI channel shore",
-				params = { },
-				position = { 0.86, 0.86, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI gradient we",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI inv we",
-				params = { 
-					clamp = true,
-					from_x = 0,
-					from_y = 1,
+					from_x = 0.425,
+					from_y = 1.05,
 					to_x = 1,
 					to_y = 0,
 				},
-				position = { 0.86, 0.864, },
+				position = { 0.72, 0.330, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI gradient ns",
+						nodeName = "TI coast inner",
 					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI inv ns",
-				params = { 
-					clamp = true,
-					from_x = 0,
-					from_y = 1,
-					to_x = 1,
-					to_y = 0,
-				},
-				position = { 0.86, 0.868, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+					in2 = {
 						key = "out",
-						nodeName = "TI gradient we",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge we na",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.872, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI inv we",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge we nb",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.876, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge we na",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI edge we nb",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI edge we mx",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.88, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge we mx",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge we",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.884, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI gradient ns",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge ns na",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.888, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI inv ns",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge ns nb",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.892, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge ns na",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI edge ns nb",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI edge ns mx",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.896, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge ns mx",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge ns",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.9, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge we",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge na",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.904, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge ns",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge nb",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.908, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge na",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI edge nb",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI edge mx",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 0.912, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge mx",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI edge",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.916, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI edge",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI outer shore",
-				params = { 
-					clamp = true,
-					from_x = 0.042,
-					from_y = 0.072,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.92, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI outer shore",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI channel shore",
+						nodeName = "TI coast outer",
 					},
 				},
 				layerType = "mul_map",
-				name = "TI shore",
+				name = "TI coast window",
 				params = { },
-				position = { 0.86, 0.924, },
+				position = { 0.72, 0.332, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI shore",
+						nodeName = "TI coast window",
+					},
+					in2 = {
+						key = "out",
+						nodeName = "TI coast wobble",
+					},
+				},
+				layerType = "mul_map",
+				name = "TI coast push",
+				params = { },
+				position = { 0.72, 0.330, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI island shape",
+					},
+					in2 = {
+						key = "out",
+						nodeName = "TI coast push",
+					},
+				},
+				layerType = "add_map",
+				name = "TI coast field",
+				params = { },
+				position = { 0.72, 0.336, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI coast field",
 					},
 				},
 				layerType = "map_clamp_map",
-				name = "TI hard land",
-				params = { 
-					clamp = true,
-					from_x = 0.9,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.928, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI shore",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI water",
-				params = { 
+				name = "TI sea field",
+				params = {
 					clamp = true,
 					from_x = 0,
 					from_y = 1,
 					to_x = 1,
 					to_y = 0,
 				},
-				position = { 0.86, 0.932, },
+				position = { 0.72, 0.348, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI water",
+						nodeName = "TI coast field",
 					},
 				},
 				layerType = "distance_map",
-				name = "TI water distance",
-				params = { 
-					threshold = 0,
+				name = "TI inland distance",
+				params = {
+					threshold = 0.5,
 				},
-				position = { 0.86, 0.936, },
+				position = { 0.72, 0.360, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI water distance",
+						nodeName = "TI sea field",
+					},
+				},
+				layerType = "distance_map",
+				name = "TI offshore distance",
+				params = {
+					threshold = 0.5,
+				},
+				position = { 0.72, 0.372, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI inland distance",
 					},
 				},
 				layerType = "map_clamp_map",
-				name = "TI coast weight",
-				params = { 
+				name = "TI beach raw",
+				params = {
 					clamp = true,
 					from_x = 0,
-					from_y = 6000,
-					to_x = 1.4,
-					to_y = 0.05,
-				},
-				position = { 0.86, 0.94, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
-						key = "seed",
-						nodeName = "Data",
-					},
-				},
-				layerType = "fractal_noise_map",
-				name = "TI place close",
-				params = { 
-					frequency = 0.00085,
-					gain = 0.55,
-					lacunarity = 2,
-					numOctaves = 3,
-				},
-				position = { 0.86, 0.944, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
-						key = "seed",
-						nodeName = "Data",
-					},
-				},
-				layerType = "fractal_noise_map",
-				name = "TI place far",
-				params = { 
-					frequency = 0.0002,
-					gain = 0.5,
-					lacunarity = 2,
-					numOctaves = 2,
-				},
-				position = { 0.86, 0.948, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI spacing",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI spacing flip",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 0,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.952, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI spacing flip",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI place close part point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.956, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI place close",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI place close part point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI place close part",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
+					from_y = 180,
 					to_x = 0,
 					to_y = 1,
 				},
-				position = { 0.86, 0.96, },
+				position = { 0.72, 0.384, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI spacing",
+						nodeName = "TI beach raw",
 					},
 				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI place far part point",
-				params = { 
-					x = 0,
-					y = 1,
+				layerType = "herp_map",
+				name = "TI beach",
+				params = {
+					point_x = 0,
+					point_y = 1,
+					tangent_x = 0,
+					tangent_y = 0,
 				},
-				position = { 0.86, 0.964, },
+				position = { 0.72, 0.396, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI place far",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI place far part point",
+						nodeName = "TI offshore distance",
 					},
 				},
 				layerType = "map_clamp_map",
-				name = "TI place far part",
-				params = { 
-					clamp = false,
+				name = "TI shelf raw",
+				params = {
+					clamp = true,
 					from_x = 0,
-					from_y = 1,
+					from_y = 260,
 					to_x = 0,
 					to_y = 1,
 				},
-				position = { 0.86, 0.968, },
+				position = { 0.72, 0.408, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI place close part",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI place far part",
+						nodeName = "TI shelf raw",
 					},
 				},
-				layerType = "add_map",
-				name = "TI place blend",
-				params = { },
-				position = { 0.86, 0.972, },
+				layerType = "herp_map",
+				name = "TI shelf",
+				params = {
+					point_x = 0,
+					point_y = 1,
+					tangent_x = 0,
+					tangent_y = 0,
+				},
+				position = { 0.72, 0.420, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI place blend",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI place norm",
-				params = { 
-					clamp = true,
-					from_x = -1.4,
-					from_y = 1.4,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.976, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI areas",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI area threshold",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 0.72,
-					b_y = 0.46,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 0.98, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
 				inputs = { },
 				layerType = "constant_map",
-				name = "TI area threshold map one",
-				params = { 
-					value = 1,
+				name = "TI seabed",
+				params = {
+					value = -28,
 				},
-				position = { 0.86, 0.984, },
+				position = { 0.72, 0.432, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI area threshold",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI area threshold map point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 0.988, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI area threshold map one",
+						nodeName = "mountains",
 					},
-					to = { 
-						key = "point",
-						nodeName = "TI area threshold map point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI area threshold map",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 0.992, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+					in2 = {
 						key = "out",
-						nodeName = "TI area threshold map",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI area threshold neg",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 0.996, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI place norm",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI area threshold neg",
-					},
-				},
-				layerType = "add_map",
-				name = "TI area delta",
-				params = { },
-				position = { 0.86, 1, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI area delta",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI area soft",
-				params = { 
-					clamp = true,
-					from_x = 0,
-					from_y = 0.16,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.004, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI area soft",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI hard land",
+						nodeName = "TI beach",
 					},
 				},
 				layerType = "mul_map",
-				name = "TI mountain mask",
+				name = "TI dry height",
 				params = { },
-				position = { 0.86, 1.008, },
+				position = { 0.72, 0.444, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI mountain mask",
+						nodeName = "TI seabed",
+					},
+					in2 = {
+						key = "out",
+						nodeName = "TI shelf",
+					},
+				},
+				layerType = "mul_map",
+				name = "TI sea height",
+				params = { },
+				position = { 0.72, 0.456, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI dry height",
+					},
+					in2 = {
+						key = "out",
+						nodeName = "TI sea height",
+					},
+				},
+				layerType = "add_map",
+				name = "TI coast blend",
+				params = { },
+				position = { 0.72, 0.468, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI coast blend",
+					},
+					in2 = {
+						key = "out",
+						nodeName = "New Add maps #77",
+					},
+				},
+				layerType = "add_map",
+				name = "TI with channel",
+				params = { },
+				position = { 0.72, 0.480, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "distance_map0",
 					},
 				},
 				layerType = "map_clamp_map",
-				name = "TI outside mountains",
-				params = { 
+				name = "TI mouth depth",
+				params = {
+					clamp = true,
+					from_x = 0,
+					from_y = 220,
+					to_x = -6,
+					to_y = 0,
+				},
+				position = { 0.72, 0.492, },
+			},
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
+						key = "out",
+						nodeName = "TI beach",
+					},
+				},
+				layerType = "map_clamp_map",
+				name = "TI shore weight",
+				params = {
 					clamp = true,
 					from_x = 0,
 					from_y = 1,
 					to_x = 1,
 					to_y = 0,
 				},
-				position = { 0.86, 1.012, },
+				position = { 0.72, 0.504, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
-						key = "seed",
-						nodeName = "Data",
-					},
-				},
-				layerType = "ridged_noise_map",
-				name = "TI ridge noise",
-				params = { 
-					baseFreq = 0.00042,
-					gain = 0.72,
-					lacunarity = 2.05,
-					numOctaves = 5,
-				},
-				position = { 0.86, 1.016, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI ridge noise",
+						nodeName = "TI mouth depth",
 					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI ridge height",
-				params = { 
-					clamp = true,
-					from_x = 0.48,
-					from_y = 0.84,
-					to_x = 0,
-					to_y = 420,
-				},
-				position = { 0.86, 1.02, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+					in2 = {
 						key = "out",
-						nodeName = "TI ridge height",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI mountain mask",
+						nodeName = "TI shore weight",
 					},
 				},
 				layerType = "mul_map",
-				name = "TI ridge masked",
+				name = "TI mouth",
 				params = { },
-				position = { 0.86, 1.024, },
+				position = { 0.72, 0.516, },
 			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
-						key = "seed",
-						nodeName = "Data",
-					},
-				},
-				layerType = "ridged_noise_map",
-				name = "TI small noise",
-				params = { 
-					baseFreq = 0.0017,
-					gain = 0.66,
-					lacunarity = 2.1,
-					numOctaves = 4,
-				},
-				position = { 0.86, 1.028, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small noise",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI small height",
-				params = { 
-					clamp = true,
-					from_x = 0.62,
-					from_y = 0.9,
-					to_x = 0,
-					to_y = 120,
-				},
-				position = { 0.86, 1.032, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small height",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI outside mountains",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI small outside",
-				params = { },
-				position = { 0.86, 1.036, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small outside",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI hard land",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI small on land",
-				params = { },
-				position = { 0.86, 1.04, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI small amount",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI small scaled point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.044, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small on land",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI small scaled point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI small scaled",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.048, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "river_map_0",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI hard land",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI river cut",
-				params = { },
-				position = { 0.86, 1.052, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI lowland",
-				params = { 
-					value = 16,
-				},
-				position = { 0.86, 1.064, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI sea lift",
-				params = { 
-					value = 36,
-				},
-				position = { 0.86, 1.068, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI sea level",
-				params = { 
-					value = -36,
-				},
-				position = { 0.86, 1.072, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small noise",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI small spine",
-				params = { 
-					clamp = true,
-					from_x = 0.62,
-					from_y = 0.9,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.076, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small spine",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI outside mountains",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI small spine out",
-				params = { },
-				position = { 0.86, 1.08, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small spine out",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI hard land",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI small spine land",
-				params = { },
-				position = { 0.86, 1.084, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI small amount",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI small spine amount point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.088, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small spine land",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI small spine amount point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI small spine amount",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.092, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_number",
-				name = "TI mountain bias scale",
-				params = { 
-					value = 2.6,
-				},
-				position = { 0.86, 1.096, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI mountain bias scale",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI mountain bias point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.1, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI mountain mask",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI mountain bias point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI mountain bias",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.104, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_number",
-				name = "TI small bias scale",
-				params = { 
-					value = 1.35,
-				},
-				position = { 0.86, 1.108, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI small bias scale",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI small bias point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.112, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small spine amount",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI small bias point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI small bias",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.116, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI mountain bias",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI mountain bias neg",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 1.12, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI coast weight",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI mountain bias neg",
-					},
-				},
-				layerType = "add_map",
-				name = "TI weight inland",
-				params = { },
-				position = { 0.86, 1.124, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI small bias",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI small bias neg",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = -1,
-				},
-				position = { 0.86, 1.128, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI weight inland",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI small bias neg",
-					},
-				},
-				layerType = "add_map",
-				name = "TI river weight",
-				params = { },
-				position = { 0.86, 1.132, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI thickness",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI thickness factor",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 4,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 1.136, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI thickness factor",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI river width point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.14, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "River width value mapping",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI river width point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI river width",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.144, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
-						key = "seed",
-						nodeName = "Data",
-					},
-				},
-				layerType = "fractal_noise_map",
-				name = "TI locale noise",
-				params = { 
-					frequency = 0.00016,
-					gain = 0.45,
-					lacunarity = 2,
-					numOctaves = 2,
-				},
-				position = { 0.86, 1.148, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI locale noise",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI locale norm",
-				params = { 
-					clamp = true,
-					from_x = -1.2,
-					from_y = 1.2,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.152, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI locale norm",
-					},
-				},
-				layerType = "mask_map",
-				name = "TI temperate band",
-				params = { 
-					interval_x = 0,
-					interval_y = 0.28,
-					lowerIncluded = true,
-					upperIncluded = false,
-				},
-				position = { 0.86, 1.156, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI temperate band",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI temperate solid",
-				params = { 
-					clamp = true,
-					from_x = 0.02,
-					from_y = 0.12,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.16, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI temperate solid",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI temperate land",
-				params = { },
-				position = { 0.86, 1.164, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI biomes",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI temperate locale point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.168, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI temperate land",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI temperate locale point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI temperate locale",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.172, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI locale norm",
-					},
-				},
-				layerType = "mask_map",
-				name = "TI desert band",
-				params = { 
-					interval_x = 0.22,
-					interval_y = 0.53,
-					lowerIncluded = true,
-					upperIncluded = false,
-				},
-				position = { 0.86, 1.176, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI desert band",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI desert solid",
-				params = { 
-					clamp = true,
-					from_x = 0.02,
-					from_y = 0.12,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.18, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI desert solid",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI desert land",
-				params = { },
-				position = { 0.86, 1.184, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI biomes",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI desert locale point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.188, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI desert land",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI desert locale point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI desert locale",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.192, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI locale norm",
-					},
-				},
-				layerType = "mask_map",
-				name = "TI tropical band",
-				params = { 
-					interval_x = 0.47,
-					interval_y = 0.78,
-					lowerIncluded = true,
-					upperIncluded = false,
-				},
-				position = { 0.86, 1.196, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI tropical band",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI tropical solid",
-				params = { 
-					clamp = true,
-					from_x = 0.02,
-					from_y = 0.12,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.2, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI tropical solid",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI tropical land",
-				params = { },
-				position = { 0.86, 1.204, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI biomes",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI tropical locale point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.208, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI tropical land",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI tropical locale point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI tropical locale",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.212, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI locale norm",
-					},
-				},
-				layerType = "mask_map",
-				name = "TI subarctic band",
-				params = { 
-					interval_x = 0.72,
-					interval_y = 1.02,
-					lowerIncluded = true,
-					upperIncluded = false,
-				},
-				position = { 0.86, 1.216, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI subarctic band",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI subarctic solid",
-				params = { 
-					clamp = true,
-					from_x = 0.02,
-					from_y = 0.12,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.22, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI subarctic solid",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI subarctic land",
-				params = { },
-				position = { 0.86, 1.224, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI biomes",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI subarctic locale point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.228, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI subarctic land",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI subarctic locale point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI subarctic locale",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.232, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI biomes",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI not diverse",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 0,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 1.236, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI not diverse",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI biome 0 point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.24, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "biome_0_mask",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI biome 0 point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI biome 0",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.244, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI not diverse",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI biome 1 kept point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.248, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "New Multiply map   #0",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI biome 1 kept point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI biome 1 kept",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.252, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI biome 1 kept",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI temperate locale",
-					},
-				},
-				layerType = "add_map",
-				name = "TI biome 1",
-				params = { },
-				position = { 0.86, 1.256, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI not diverse",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI biome 2 kept point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.26, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "New Multiply map  #0",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI biome 2 kept point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI biome 2 kept",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.264, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI biome 2 kept",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI desert locale",
-					},
-				},
-				layerType = "add_map",
-				name = "TI biome 2",
-				params = { },
-				position = { 0.86, 1.268, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI not diverse",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI biome 3 kept point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.272, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "New Multiply map   #1",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI biome 3 kept point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI biome 3 kept",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.276, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI biome 3 kept",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI tropical locale",
-					},
-				},
-				layerType = "add_map",
-				name = "TI biome 3",
-				params = { },
-				position = { 0.86, 1.28, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "output",
-						nodeName = "TI not diverse",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI biome 4 kept point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.284, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "New Compare map #282",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI biome 4 kept point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI biome 4 kept",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.288, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI biome 4 kept",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI subarctic locale",
-					},
-				},
-				layerType = "add_map",
-				name = "TI biome 4",
-				params = { },
-				position = { 0.86, 1.292, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					output = { 
-						key = "out",
-						nodeName = "TI desert locale",
-					},
-				},
-				layerType = "output_map_data",
-				name = "TI out ti_desert",
-				params = { 
-					key = "ti_desert",
-					persistent = true,
-					resolutionx = 32,
-					resolutiony = 32,
-				},
-				position = { 0.86, 1.296, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					output = { 
-						key = "out",
-						nodeName = "TI tropical locale",
-					},
-				},
-				layerType = "output_map_data",
-				name = "TI out ti_tropical",
-				params = { 
-					key = "ti_tropical",
-					persistent = true,
-					resolutionx = 32,
-					resolutiony = 32,
-				},
-				position = { 0.86, 1.3, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					output = { 
-						key = "out",
-						nodeName = "TI subarctic locale",
-					},
-				},
-				layerType = "output_map_data",
-				name = "TI out ti_subarctic",
-				params = { 
-					key = "ti_subarctic",
-					persistent = true,
-					resolutionx = 32,
-					resolutiony = 32,
-				},
-				position = { 0.86, 1.304, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					seed = { 
-						key = "seed",
-						nodeName = "Data",
-					},
-				},
-				layerType = "fractal_noise_map",
-				name = "TI tree noise",
-				params = { 
-					frequency = 0.0011,
-					gain = 0.5,
-					lacunarity = 2,
-					numOctaves = 2,
-				},
-				position = { 0.86, 1.308, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI cactus index",
-				params = { 
-					value = 20,
-				},
-				position = { 0.86, 1.312, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI shrub index",
-				params = { 
-					value = 21,
-				},
-				position = { 0.86, 1.316, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI palm index",
-				params = { 
-					value = 22,
-				},
-				position = { 0.86, 1.32, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_map",
-				name = "TI spruce index",
-				params = { 
-					value = 23,
-				},
-				position = { 0.86, 1.324, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					compare = { 
-						key = "out",
-						nodeName = "TI tree noise",
-					},
-					in1 = { 
-						key = "out",
-						nodeName = "TI cactus index",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shrub index",
-					},
-				},
-				layerType = "combine_map",
-				name = "TI desert trees",
-				params = { 
-					op = "Greater",
-					value = 0.58,
-				},
-				position = { 0.86, 1.328, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					compare = { 
-						key = "out",
-						nodeName = "TI desert locale",
-					},
-					in1 = { 
-						key = "out",
-						nodeName = "TI desert trees",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "add temperate river trees",
-					},
-				},
-				layerType = "combine_map",
-				name = "TI forest desert",
-				params = { 
-					op = "Greater",
-					value = 0.45,
-				},
-				position = { 0.86, 1.332, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					compare = { 
-						key = "out",
-						nodeName = "TI tropical locale",
-					},
-					in1 = { 
-						key = "out",
-						nodeName = "TI palm index",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI forest desert",
-					},
-				},
-				layerType = "combine_map",
-				name = "TI forest tropical",
-				params = { 
-					op = "Greater",
-					value = 0.45,
-				},
-				position = { 0.86, 1.336, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					compare = { 
-						key = "out",
-						nodeName = "TI subarctic locale",
-					},
-					in1 = { 
-						key = "out",
-						nodeName = "TI spruce index",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI forest tropical",
-					},
-				},
-				layerType = "combine_map",
-				name = "TI forest",
-				params = { 
-					op = "Greater",
-					value = 0.45,
-				},
-				position = { 0.86, 1.34, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI lake size",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI varying gate",
-				params = { 
-					a_x = 0.85,
-					a_y = 0.95,
-					b_x = 0,
-					b_y = 1,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 1.344, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "output",
-						nodeName = "TI varying gate",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI uniform gate",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1,
-					b_y = 0,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 1.348, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "Quantity of sea  samples #0",
-					},
-					in2 = { 
-						key = "output",
-						nodeName = "TI uniform gate",
-					},
-				},
-				layerType = "mul_number",
-				name = "TI uniform quad count",
-				params = { 
-					in2 = 0,
-				},
-				position = { 0.86, 1.352, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "Quantity of sea  samples #0",
-					},
-					in2 = { 
-						key = "output",
-						nodeName = "TI varying gate",
-					},
-				},
-				layerType = "mul_number",
-				name = "TI varying quad count",
-				params = { 
-					in2 = 0,
-				},
-				position = { 0.86, 1.356, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					x = { 
-						key = "out",
-						nodeName = "TI lake size",
-					},
-				},
-				layerType = "gui/node_editor/remap_number.node",
-				name = "TI uniform scale",
-				params = { 
-					a_x = 0,
-					a_y = 1,
-					b_x = 1.35,
-					b_y = 2.4,
-					clamp = true,
-					x = 0,
-				},
-				position = { 0.86, 1.36, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "Atlas scales #0",
-					},
-					in2 = { 
-						key = "output",
-						nodeName = "TI uniform scale",
-					},
-					in3 = { 
-						key = "out",
-						nodeName = "TI zero",
-					},
-				},
-				layerType = "scale_pointcloud",
-				name = "TI uniform lake scales",
-				params = { 
-					in2 = 1,
-					in3 = 0,
-				},
-				position = { 0.86, 1.364, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_pointcloud",
-				name = "TI varying scales",
-				params = { 
-					values = {
-						{ 7000, 0, },
-						{ 7000, 0, },
-						{ 7000, 0, },
-						{ 7000, 0, },
-						{ 11000, 0, },
-						{ 11000, 0, },
-						{ 11000, 0, },
-						{ 11000, 0, },
-						{ 16000, 0, },
-						{ 16000, 0, },
-						{ 16000, 0, },
-						{ 16000, 0, },
-						{ 22000, 0, },
-						{ 22000, 0, },
-						{ 22000, 0, },
-						{ 22000, 0, },
-					},
-				},
-				position = { 0.86, 1.368, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					mask = { 
-						key = "out",
-						nodeName = "New Constant map #316",
-					},
-					max = { 
-						key = "mapBoundsMax",
-						nodeName = "Data #0",
-					},
-					min = { 
-						key = "mapBoundsMin",
-						nodeName = "Data #0",
-					},
-					numQuads = { 
-						key = "out",
-						nodeName = "TI varying quad count",
-					},
-					sizeAndScale = { 
-						key = "out",
-						nodeName = "TI varying scales",
-					},
-				},
-				layerType = "gui/node_editor/random_quads.node",
-				name = "TI varying quads",
-				params = { 
-					atlasSize_x = 4,
-					atlasSize_y = 4,
-					centerCheck = true,
-					max_x = 0,
-					max_y = 0,
-					min_x = 0,
-					min_y = 0,
-					numQuads = 0,
-				},
-				position = { 0.86, 1.372, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					texCoords = { 
-						key = "texCoords",
-						nodeName = "TI varying quads",
-					},
-					vertices = { 
-						key = "vertices",
-						nodeName = "TI varying quads",
-					},
-				},
-				layerType = "rasterizer_map",
-				name = "TI varying raster",
-				params = { 
-					op = "Max",
-					tex = "::/climates/gen/tex/lakes_atlas_02.tga",
-					wrapS = "REPEAT",
-					wrapT = "REPEAT",
-				},
-				position = { 0.86, 1.376, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "Sea Rasterization",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI varying raster",
-					},
-				},
-				layerType = "compare_map",
-				name = "TI lakes combined",
-				params = { 
-					op = "MAX",
-				},
-				position = { 0.86, 1.38, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { },
-				layerType = "constant_number",
-				name = "TI lake depth number",
-				params = { 
-					value = -20,
-				},
-				position = { 0.86, 1.384, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					y = { 
-						key = "out",
-						nodeName = "TI lake depth number",
-					},
-				},
-				layerType = "gui/node_editor/combine_point.node",
-				name = "TI lake cut raw point",
-				params = { 
-					x = 0,
-					y = 1,
-				},
-				position = { 0.86, 1.388, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI lakes combined",
-					},
-					to = { 
-						key = "point",
-						nodeName = "TI lake cut raw point",
-					},
-				},
-				layerType = "map_clamp_map",
-				name = "TI lake cut raw",
-				params = { 
-					clamp = false,
-					from_x = 0,
-					from_y = 1,
-					to_x = 0,
-					to_y = 1,
-				},
-				position = { 0.86, 1.392, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI lake cut raw",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI hard land",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI lake cut",
-				params = { },
-				position = { 0.86, 1.396, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI lowland",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI ridge masked",
-					},
-				},
-				layerType = "add_map",
-				name = "TI base height 1",
-				params = { },
-				position = { 0.86, 1.4, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI base height 1",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI small scaled",
-					},
-				},
-				layerType = "add_map",
-				name = "TI base height 2",
-				params = { },
-				position = { 0.86, 1.404, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI base height 2",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI river cut",
-					},
-				},
-				layerType = "add_map",
-				name = "TI base height 3",
-				params = { },
-				position = { 0.86, 1.408, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI base height 3",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI lake cut",
-					},
-				},
-				layerType = "add_map",
-				name = "TI base height",
-				params = { },
-				position = { 0.86, 1.412, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI base height",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI sea lift",
-					},
-				},
-				layerType = "add_map",
-				name = "TI lifted",
-				params = { },
-				position = { 0.86, 1.416, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
-						key = "out",
-						nodeName = "TI lifted",
-					},
-					in2 = { 
-						key = "out",
-						nodeName = "TI shore",
-					},
-				},
-				layerType = "mul_map",
-				name = "TI lifted shore",
-				params = { },
-				position = { 0.86, 1.42, },
-			},
-			{ 
-				color = { 0.95, 0.45, 0.12, 0.6, },
-				inputs = { 
-					in1 = { 
+			{
+				color = { 0.95, 0.55, 0.15, 0.6, },
+				inputs = {
+					in1 = {
 						key = "out",
-						nodeName = "TI lifted shore",
+						nodeName = "TI with channel",
 					},
-					in2 = { 
+					in2 = {
 						key = "out",
-						nodeName = "TI sea level",
+						nodeName = "TI mouth",
 					},
 				},
 				layerType = "add_map",
 				name = "TI final height",
 				params = { },
-				position = { 0.86, 1.424, },
+				position = { 0.72, 0.528, },
 			},
 		},
 		previewSeed = "yQKiK",
@@ -10412,664 +7287,6 @@ Otherwise no asset is placed.]],
 			white_noise_map_1 = { 
 				probability = { },
 				seed = { },
-			},
-			["TI islands"] = { 
-			},
-			["TI areas"] = { 
-			},
-			["TI spacing"] = { 
-			},
-			["TI small amount"] = { 
-			},
-			["TI thickness"] = { 
-			},
-			["TI lake amount"] = { 
-			},
-			["TI lake size"] = { 
-			},
-			["TI biomes"] = { 
-			},
-			["TI zero"] = { 
-			},
-			["TI one"] = { 
-			},
-			["TI gradient we"] = { 
-				maxHeight = { },
-				minHeight = { },
-			},
-			["TI gradient ns"] = { 
-				maxHeight = { },
-				minHeight = { },
-			},
-			["TI inv width"] = { 
-				in1 = { },
-			},
-			["TI half raw"] = { 
-				in1 = { },
-			},
-			["TI half"] = { 
-				x = { },
-			},
-			["TI inv half"] = { 
-				in1 = { },
-			},
-			["TI axis random"] = { 
-				seed = { },
-			},
-			["TI axis"] = { 
-				x = { },
-			},
-			["TI axis flip"] = { 
-				x = { },
-			},
-			["TI we part point"] = { 
-				y = { },
-			},
-			["TI we part"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI ns part point"] = { 
-				y = { },
-			},
-			["TI ns part"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI channel coord"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI is2"] = { 
-				x = { },
-			},
-			["TI is3"] = { 
-				x = { },
-			},
-			["TI not is2"] = { 
-				x = { },
-			},
-			["TI not is3"] = { 
-				x = { },
-			},
-			["TI is2 only"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 2 shift"] = { 
-			},
-			["TI abs 2 delta"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 2 neg"] = { 
-				in1 = { },
-			},
-			["TI abs 2"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI shore 2 norm point"] = { 
-				y = { },
-			},
-			["TI shore 2 norm"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI shore 2"] = { 
-				in1 = { },
-			},
-			["TI abs 3a shift"] = { 
-			},
-			["TI abs 3a delta"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 3a neg"] = { 
-				in1 = { },
-			},
-			["TI abs 3a"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 3b shift"] = { 
-			},
-			["TI abs 3b delta"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 3b neg"] = { 
-				in1 = { },
-			},
-			["TI abs 3b"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 3 na"] = { 
-				in1 = { },
-			},
-			["TI abs 3 nb"] = { 
-				in1 = { },
-			},
-			["TI abs 3 mx"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI abs 3"] = { 
-				in1 = { },
-			},
-			["TI shore 3 norm point"] = { 
-				y = { },
-			},
-			["TI shore 3 norm"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI shore 3"] = { 
-				in1 = { },
-			},
-			["TI map one"] = { 
-			},
-			["TI shore term a point"] = { 
-				y = { },
-			},
-			["TI shore term a"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI shore term b point"] = { 
-				y = { },
-			},
-			["TI shore term b"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI shore term c point"] = { 
-				y = { },
-			},
-			["TI shore term c"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI channel shore 1"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI channel shore"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI inv we"] = { 
-				in1 = { },
-			},
-			["TI inv ns"] = { 
-				in1 = { },
-			},
-			["TI edge we na"] = { 
-				in1 = { },
-			},
-			["TI edge we nb"] = { 
-				in1 = { },
-			},
-			["TI edge we mx"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI edge we"] = { 
-				in1 = { },
-			},
-			["TI edge ns na"] = { 
-				in1 = { },
-			},
-			["TI edge ns nb"] = { 
-				in1 = { },
-			},
-			["TI edge ns mx"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI edge ns"] = { 
-				in1 = { },
-			},
-			["TI edge na"] = { 
-				in1 = { },
-			},
-			["TI edge nb"] = { 
-				in1 = { },
-			},
-			["TI edge mx"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI edge"] = { 
-				in1 = { },
-			},
-			["TI outer shore"] = { 
-				in1 = { },
-			},
-			["TI shore"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI hard land"] = { 
-				in1 = { },
-			},
-			["TI water"] = { 
-				in1 = { },
-			},
-			["TI water distance"] = { 
-				in1 = { },
-			},
-			["TI coast weight"] = { 
-				in1 = { },
-			},
-			["TI place close"] = { 
-				seed = { },
-			},
-			["TI place far"] = { 
-				seed = { },
-			},
-			["TI spacing flip"] = { 
-				x = { },
-			},
-			["TI place close part point"] = { 
-				y = { },
-			},
-			["TI place close part"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI place far part point"] = { 
-				y = { },
-			},
-			["TI place far part"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI place blend"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI place norm"] = { 
-				in1 = { },
-			},
-			["TI area threshold"] = { 
-				x = { },
-			},
-			["TI area threshold map one"] = { 
-			},
-			["TI area threshold map point"] = { 
-				y = { },
-			},
-			["TI area threshold map"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI area threshold neg"] = { 
-				in1 = { },
-			},
-			["TI area delta"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI area soft"] = { 
-				in1 = { },
-			},
-			["TI mountain mask"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI outside mountains"] = { 
-				in1 = { },
-			},
-			["TI ridge noise"] = { 
-				seed = { },
-			},
-			["TI ridge height"] = { 
-				in1 = { },
-			},
-			["TI ridge masked"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI small noise"] = { 
-				seed = { },
-			},
-			["TI small height"] = { 
-				in1 = { },
-			},
-			["TI small outside"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI small on land"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI small scaled point"] = { 
-				y = { },
-			},
-			["TI small scaled"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI river cut"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI lowland"] = { 
-			},
-			["TI sea lift"] = { 
-			},
-			["TI sea level"] = { 
-			},
-			["TI small spine"] = { 
-				in1 = { },
-			},
-			["TI small spine out"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI small spine land"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI small spine amount point"] = { 
-				y = { },
-			},
-			["TI small spine amount"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI mountain bias scale"] = { 
-			},
-			["TI mountain bias point"] = { 
-				y = { },
-			},
-			["TI mountain bias"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI small bias scale"] = { 
-			},
-			["TI small bias point"] = { 
-				y = { },
-			},
-			["TI small bias"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI mountain bias neg"] = { 
-				in1 = { },
-			},
-			["TI weight inland"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI small bias neg"] = { 
-				in1 = { },
-			},
-			["TI river weight"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI thickness factor"] = { 
-				x = { },
-			},
-			["TI river width point"] = { 
-				y = { },
-			},
-			["TI river width"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI locale noise"] = { 
-				seed = { },
-			},
-			["TI locale norm"] = { 
-				in1 = { },
-			},
-			["TI temperate band"] = { 
-				in1 = { },
-			},
-			["TI temperate solid"] = { 
-				in1 = { },
-			},
-			["TI temperate land"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI temperate locale point"] = { 
-				y = { },
-			},
-			["TI temperate locale"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI desert band"] = { 
-				in1 = { },
-			},
-			["TI desert solid"] = { 
-				in1 = { },
-			},
-			["TI desert land"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI desert locale point"] = { 
-				y = { },
-			},
-			["TI desert locale"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI tropical band"] = { 
-				in1 = { },
-			},
-			["TI tropical solid"] = { 
-				in1 = { },
-			},
-			["TI tropical land"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI tropical locale point"] = { 
-				y = { },
-			},
-			["TI tropical locale"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI subarctic band"] = { 
-				in1 = { },
-			},
-			["TI subarctic solid"] = { 
-				in1 = { },
-			},
-			["TI subarctic land"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI subarctic locale point"] = { 
-				y = { },
-			},
-			["TI subarctic locale"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI not diverse"] = { 
-				x = { },
-			},
-			["TI biome 0 point"] = { 
-				y = { },
-			},
-			["TI biome 0"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI biome 1 kept point"] = { 
-				y = { },
-			},
-			["TI biome 1 kept"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI biome 1"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI biome 2 kept point"] = { 
-				y = { },
-			},
-			["TI biome 2 kept"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI biome 2"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI biome 3 kept point"] = { 
-				y = { },
-			},
-			["TI biome 3 kept"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI biome 3"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI biome 4 kept point"] = { 
-				y = { },
-			},
-			["TI biome 4 kept"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI biome 4"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI out ti_desert"] = { 
-				output = { },
-			},
-			["TI out ti_tropical"] = { 
-				output = { },
-			},
-			["TI out ti_subarctic"] = { 
-				output = { },
-			},
-			["TI tree noise"] = { 
-				seed = { },
-			},
-			["TI cactus index"] = { 
-			},
-			["TI shrub index"] = { 
-			},
-			["TI palm index"] = { 
-			},
-			["TI spruce index"] = { 
-			},
-			["TI desert trees"] = { 
-				compare = { },
-				in1 = { },
-				in2 = { },
-			},
-			["TI forest desert"] = { 
-				compare = { },
-				in1 = { },
-				in2 = { },
-			},
-			["TI forest tropical"] = { 
-				compare = { },
-				in1 = { },
-				in2 = { },
-			},
-			["TI forest"] = { 
-				compare = { },
-				in1 = { },
-				in2 = { },
-			},
-			["TI varying gate"] = { 
-				x = { },
-			},
-			["TI uniform gate"] = { 
-				x = { },
-			},
-			["TI uniform quad count"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI varying quad count"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI uniform scale"] = { 
-				x = { },
-			},
-			["TI uniform lake scales"] = { 
-				in1 = { },
-				in2 = { },
-				in3 = { },
-			},
-			["TI varying scales"] = { 
-			},
-			["TI varying quads"] = { 
-				mask = { },
-				max = { },
-				min = { },
-				numQuads = { },
-				sizeAndScale = { },
-			},
-			["TI varying raster"] = { 
-				texCoords = { },
-				vertices = { },
-			},
-			["TI lakes combined"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI lake depth number"] = { 
-			},
-			["TI lake cut raw point"] = { 
-				y = { },
-			},
-			["TI lake cut raw"] = { 
-				in1 = { },
-				to = { },
-			},
-			["TI lake cut"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI base height 1"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI base height 2"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI base height 3"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI base height"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI lifted"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI lifted shore"] = { 
-				in1 = { },
-				in2 = { },
-			},
-			["TI final height"] = { 
-				in1 = { },
-				in2 = { },
 			},
 		},
 	}
