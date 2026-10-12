@@ -1,0 +1,23 @@
+{
+    "name": "Temperate Island",
+    "summary": "Temperate map generator that builds an island with adjustable lakes, rivers, and mountains.",
+    "description": "Temperate Island adds a terrain generator for the temperate climate. It shows up in the map generator list when starting a new game.\n\nThe generator builds an island with a varied coast, inland lakes, rivers, and mountains. Forests and alpine conifers follow the height and biome layout.\n\nThree sliders shape the result. Each one runs from Sparse to Packed, and the default is Dense.\n\n- Lakes: how many lakes appear\n- Rivers: how many rivers appear\n- Mountains: how many mountains appear, and how high they are",
+    "localization": {
+        "en": {
+            "name": "Temperate Island",
+            "summary": "Temperate map generator that builds an island with adjustable lakes, rivers, and mountains.",
+            "description": "Temperate Island adds a terrain generator for the temperate climate. It shows up in the map generator list when starting a new game.\n\nThe generator builds an island with a varied coast, inland lakes, rivers, and mountains. Forests and alpine conifers follow the height and biome layout.\n\nThree sliders shape the result. Each one runs from Sparse to Packed, and the default is Dense.\n\n- Lakes: how many lakes appear\n- Rivers: how many rivers appear\n- Mountains: how many mountains appear, and how high they are"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrey Ignatyev",
+            "role": "CREATOR"
+        }
+    ],
+    "tags": [
+        "Map",
+        "Temperate"
+    ],
+    "url": "https://github.com/tfeloo-hygfosaad/tpf3-temperate-island-generator"
+}
